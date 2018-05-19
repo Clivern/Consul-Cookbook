@@ -105,6 +105,12 @@ Misc
 
 Changelog
 ---------
+
+Version 1.0.2:
+```
+Update The Cookbook Version
+```
+
 Version 1.0.1:
 ```
 Simple Fix.
