@@ -1,0 +1,11 @@
+[Unit]
+Description=Consul
+Documentation=https://www.consul.io/
+
+[Service]
+ExecStart=/usr/local/bin/consul agent -data-dir /tmp/consul -ui -client <%= node['consul']['node_fqdn'] %> -join <%= node['consul']['leader_fqdn'] %> -enable-script-checks -datacenter <%= node['consul']['datacenter'] %>
+ExecReload=/bin/kill -HUP $MAINPID
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

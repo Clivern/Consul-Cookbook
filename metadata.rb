@@ -1,4 +1,4 @@
-name 'consul-cookbook'
+name 'clivern-consul'
 maintainer 'Clivern'
 maintainer_email 'hello@clivern.com'
 license 'Apache 2.0'
