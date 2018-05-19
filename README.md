@@ -105,6 +105,11 @@ Misc
 
 Changelog
 ---------
+Version 1.0.1:
+```
+Simple Fix.
+```
+
 Version 1.0.0:
 ```
 Initial Release.

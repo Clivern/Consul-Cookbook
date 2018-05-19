@@ -17,7 +17,7 @@ package "unzip" do
     action :install
 end
 
-bash 'restart-kevin-service' do
+bash 'download-consul' do
     code <<-EOF
         cd /usr/local/bin
         wget #{node['consul']['download_url']}
