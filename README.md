@@ -26,7 +26,7 @@ First The Leader Node should be like the following:
 
 ```bash
 {
-    "name": "leader-node-01",
+    "name": "leader-node",
     "chef_environment": "_default",
     "normal": {
         "tags": [
@@ -60,7 +60,7 @@ Then The Server(s) Node should be like the following:
         "consul": {
             "node_fqdn": "z.z.z.z",
             "leader_fqdn": "x.x.x.x",
-            "type": "leader",
+            "type": "server",
             "datacenter": "US-01"
         }
     },
@@ -85,7 +85,7 @@ Then The Client(s) Node should be like the following:
         "consul": {
             "node_fqdn": "y.y.y.y",
             "leader_fqdn": "x.x.x.x",
-            "type": "leader",
+            "type": "client",
             "datacenter": "US-01"
         }
     },
